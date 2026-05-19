@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade — Maestros da IA</title>
+  <meta name="description" content="Política de Privacidade da Maestros da IA (Maestria Academy Ltda). Saiba como coletamos, usamos e protegemos seus dados pessoais em conformidade com a LGPD.">
+  <link rel="canonical" href="https://politica.maestrosdaia.com/">
+
+  <!-- OG Tags -->
+  <meta property="og:title" content="Política de Privacidade — Maestros da IA">
+  <meta property="og:description" content="Saiba como a Maestros da IA coleta, usa e protege seus dados pessoais em conformidade com a LGPD.">
+  <meta property="og:url" content="https://politica.maestrosdaia.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Maestros da IA">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Política de Privacidade — Maestros da IA">
+  <meta name="twitter:description" content="Saiba como a Maestros da IA coleta, usa e protege seus dados pessoais em conformidade com a LGPD.">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text-primary: #0f172a;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --bg-page: #ffffff;
+      --bg-surface: #f8fafc;
+      --bg-badge: #0f172a;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --radius: 8px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      background: var(--bg-page);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* Header */
+    .page-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-header h1 {
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--bg-badge);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 100px;
+      letter-spacing: 0.01em;
+    }
+
+    .page-header p {
+      margin-top: 20px;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* TOC */
+    .toc {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+
+    .toc-title {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .toc ol {
+      list-style: none;
+      counter-reset: toc-counter;
+    }
+
+    .toc li {
+      counter-increment: toc-counter;
+      margin-bottom: 6px;
+    }
+
+    .toc li::before {
+      content: counter(toc-counter) ".";
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-right: 8px;
+      font-size: 14px;
+    }
+
+    .toc a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 15px;
+      transition: color 0.15s;
+    }
+
+    .toc a:hover {
+      color: var(--accent);
+    }
+
+    /* Headings */
+    h2 {
+      font-size: clamp(1.25rem, 3vw, 1.5rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-top: 56px;
+      margin-bottom: 20px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      letter-spacing: -0.01em;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+      border-top: none;
+      padding-top: 0;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    /* Body text */
+    p {
+      margin-bottom: 16px;
+    }
+
+    strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+    }
+
+    /* Lists */
+    ul, ol {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    li::marker {
+      color: var(--text-muted);
+    }
+
+    /* Tables */
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 20px 0 28px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    thead {
+      background: var(--bg-surface);
+    }
+
+    th {
+      text-align: left;
+      font-weight: 600;
+      color: var(--text-primary);
+      padding: 12px 16px;
+      border-bottom: 2px solid var(--border);
+      white-space: nowrap;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr:hover {
+      background: var(--bg-surface);
+    }
+
+    /* Info box */
+    .info-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 20px 0;
+      font-size: 15px;
+    }
+
+    .info-box p {
+      margin-bottom: 0;
+    }
+
+    .info-box ul {
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+
+    /* Separator */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 48px 0;
+    }
+
+    /* Footer */
+    .page-footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .page-footer p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .page-footer a {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .page-footer a:hover {
+      color: var(--accent);
+    }
+
+    .end-mark {
+      font-size: 14px;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    /* Back to top */
+    .back-to-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      background: var(--bg-badge);
+      color: #ffffff;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      z-index: 100;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .back-to-top svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .container {
+        padding: 32px 16px 64px;
+      }
+
+      .toc {
+        padding: 20px;
+      }
+
+      th, td {
+        padding: 10px 12px;
+        font-size: 13px;
+      }
+
+      .back-to-top {
+        bottom: 16px;
+        right: 16px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="topo">
+
+    <header class="page-header">
+      <h1>Política de Privacidade</h1>
+      <span class="badge">Última atualização: 19 de maio de 2026</span>
+      <p>Esta Política de Privacidade descreve como a <strong>Maestria Academy Ltda</strong> ("Maestros da IA", "nós", "nossa") coleta, utiliza, armazena, compartilha e protege os dados pessoais de visitantes, leads, alunos e membros da nossa comunidade ("você"), em conformidade com a <strong>Lei Geral de Proteção de Dados Pessoais — Lei nº 13.709/2018 (LGPD)</strong>, o <strong>Marco Civil da Internet (Lei nº 12.965/2014)</strong> e o <strong>Código de Defesa do Consumidor</strong>.</p>
+      <p>Ao se cadastrar em nosso WhatsApp, criar conta em nossa comunidade, comprar um de nossos produtos ou interagir conosco por qualquer canal, você declara ter lido e compreendido esta Política.</p>
+    </header>
+
+    <!-- Table of Contents -->
+    <nav class="toc" aria-label="Sumário">
+      <div class="toc-title">Sumário</div>
+      <ol>
+        <li><a href="#secao-1">Quem somos (Controlador dos Dados)</a></li>
+        <li><a href="#secao-2">Quais dados coletamos</a></li>
+        <li><a href="#secao-3">Para que finalidades usamos seus dados</a></li>
+        <li><a href="#secao-4">Bases legais do tratamento</a></li>
+        <li><a href="#secao-5">Com quem compartilhamos seus dados</a></li>
+        <li><a href="#secao-6">Transferência internacional de dados</a></li>
+        <li><a href="#secao-7">Por quanto tempo guardamos seus dados</a></li>
+        <li><a href="#secao-8">Seus direitos como titular</a></li>
+        <li><a href="#secao-9">Cookies e tecnologias similares</a></li>
+        <li><a href="#secao-10">Segurança dos dados</a></li>
+        <li><a href="#secao-11">Crianças e adolescentes</a></li>
+        <li><a href="#secao-12">Alterações desta Política</a></li>
+        <li><a href="#secao-13">Encarregado (DPO) e contato</a></li>
+      </ol>
+    </nav>
+
+    <!-- Section 1 -->
+    <h2 id="secao-1">1. Quem somos (Controlador dos Dados)</h2>
+    <ul>
+      <li><strong>Razão social:</strong> Maestria Academy Ltda</li>
+      <li><strong>CNPJ:</strong> 62.434.578/0001-03</li>
+      <li><strong>Marca:</strong> Maestros da IA</li>
+      <li><strong>E-mail para questões de privacidade:</strong> <a href="mailto:privacidade@maestrosdaia.com">privacidade@maestrosdaia.com</a></li>
+    </ul>
+    <p>A Maestria Academy é o <strong>Controlador</strong> dos seus dados pessoais nos termos do Art. 5º, VI da LGPD. Isso significa que somos responsáveis pelas decisões sobre o tratamento dos seus dados.</p>
+
+    <!-- Section 2 -->
+    <h2 id="secao-2">2. Quais dados coletamos</h2>
+
+    <h3>2.1 Dados fornecidos por você</h3>
+    <ul>
+      <li>Nome completo</li>
+      <li>Número de WhatsApp / telefone</li>
+      <li>E-mail</li>
+      <li>CPF (apenas no momento da compra, por exigência fiscal)</li>
+      <li>Foto de perfil (quando enviada via login social ou upload manual)</li>
+      <li>Endereço de cobrança (apenas no checkout, quando aplicável)</li>
+      <li>Conteúdo de mensagens trocadas conosco (WhatsApp, e-mail, formulários, DMs na comunidade)</li>
+      <li>Conteúdo publicado por você na comunidade (posts, comentários, fotos, vídeos, prompts, projetos)</li>
+    </ul>
+
+    <h3>2.2 Dados coletados automaticamente</h3>
+    <ul>
+      <li>Endereço IP, identificador de dispositivo, tipo de navegador e sistema operacional</li>
+      <li>Páginas visitadas, tempo de permanência, cliques, origem do tráfego (UTM)</li>
+      <li>Cookies e tecnologias similares (ver <a href="#secao-9">Seção 9</a>)</li>
+      <li>Localização aproximada derivada do IP (cidade/estado)</li>
+    </ul>
+
+    <h3>2.3 Dados recebidos de terceiros</h3>
+    <ul>
+      <li><strong>Google (login social):</strong> quando você entra em nossa comunidade com sua conta Google, recebemos seu nome, e-mail e foto de perfil pública. Não temos acesso à sua senha do Google nem aos demais dados da sua conta.</li>
+      <li><strong>OnProfit (gateway de pagamento):</strong> recebemos status do pagamento, valor, número de parcelas, últimos 4 dígitos do cartão e identificador da transação. Não armazenamos o número completo do cartão.</li>
+      <li><strong>Plataformas de anúncios (Meta, Google):</strong> recebemos dados anonimizados sobre origem do clique, criativo e campanha.</li>
+    </ul>
+
+    <h3>2.4 Dados sensíveis</h3>
+    <p>Não coletamos intencionalmente dados pessoais sensíveis (origem racial, religião, opinião política, saúde, vida sexual, dado genético ou biométrico). Caso você os publique espontaneamente em nossa comunidade, recomendamos cautela — esses dados ficarão visíveis aos demais membros conforme as regras de privacidade do espaço onde forem publicados.</p>
+
+    <!-- Section 3 -->
+    <h2 id="secao-3">3. Para que finalidades usamos seus dados</h2>
+    <p>Tratamos seus dados pessoais para as seguintes finalidades:</p>
+    <ul>
+      <li><strong>Comunicar com você</strong> via WhatsApp, e-mail e dentro da comunidade — incluindo mensagens automatizadas nas primeiras 24 horas após sua adesão, com base no consentimento que você fornece ao clicar nos nossos botões de opt-in</li>
+      <li><strong>Liberar e manter o acesso</strong> à comunidade Maestros da IA e aos cursos contratados</li>
+      <li><strong>Processar pagamentos</strong>, emitir notas fiscais e cumprir obrigações fiscais e contábeis</li>
+      <li><strong>Personalizar conteúdos, recomendações e ofertas</strong> com base nos seus interesses declarados e comportamento</li>
+      <li><strong>Atender suas solicitações de suporte, dúvidas, cancelamentos e reembolsos</strong></li>
+      <li><strong>Melhorar nossos produtos, conteúdos e atendimento</strong> (análise agregada de uso)</li>
+      <li><strong>Prevenir fraudes, abusos e violações</strong> dos nossos Termos de Uso e da lei</li>
+      <li><strong>Cumprir obrigações legais e regulatórias</strong> e responder a solicitações de autoridades competentes (ANPD, Procon, Receita Federal, Poder Judiciário)</li>
+      <li><strong>Defender direitos</strong> em processos administrativos ou judiciais</li>
+    </ul>
+
+    <!-- Section 4 -->
+    <h2 id="secao-4">4. Bases legais do tratamento</h2>
+    <p>Cada tratamento de dados que realizamos tem uma base legal específica prevista no Art. 7º da LGPD:</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Finalidade</th>
+            <th>Base legal (LGPD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Envio de mensagens de marketing por WhatsApp e e-mail</td>
+            <td>Consentimento (Art. 7, I)</td>
+          </tr>
+          <tr>
+            <td>Liberação de acesso a curso/comunidade adquirido</td>
+            <td>Execução de contrato (Art. 7, V)</td>
+          </tr>
+          <tr>
+            <td>Cobrança, faturamento e emissão fiscal</td>
+            <td>Cumprimento de obrigação legal (Art. 7, II)</td>
+          </tr>
+          <tr>
+            <td>Análise de uso, segurança, antifraude e melhoria de produto</td>
+            <td>Legítimo interesse (Art. 7, IX)</td>
+          </tr>
+          <tr>
+            <td>Atendimento a suporte e exercício de direitos</td>
+            <td>Execução de contrato + obrigação legal</td>
+          </tr>
+          <tr>
+            <td>Cookies essenciais ao funcionamento do site</td>
+            <td>Legítimo interesse</td>
+          </tr>
+          <tr>
+            <td>Cookies de análise e marketing</td>
+            <td>Consentimento</td>
+          </tr>
+          <tr>
+            <td>Defesa em processos judiciais ou administrativos</td>
+            <td>Exercício regular de direitos (Art. 7, VI)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Você pode revogar o consentimento a qualquer momento, conforme descrito na <a href="#secao-8">Seção 8</a>.</p>
+
+    <!-- Section 5 -->
+    <h2 id="secao-5">5. Com quem compartilhamos seus dados</h2>
+    <p>Compartilhamos seus dados apenas com fornecedores estritamente necessários para a operação do negócio, todos sob obrigação contratual de proteger seus dados:</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Fornecedor</th>
+            <th>Finalidade</th>
+            <th>País</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Circle.so, Inc.</strong></td>
+            <td>Plataforma da comunidade e dos cursos</td>
+            <td>EUA</td>
+          </tr>
+          <tr>
+            <td><strong>OnProfit</strong></td>
+            <td>Processamento de pagamentos e emissão fiscal</td>
+            <td>Brasil</td>
+          </tr>
+          <tr>
+            <td><strong>WhatsApp / Meta Platforms</strong></td>
+            <td>Envio de mensagens, atendimento e remarketing</td>
+            <td>Internacional</td>
+          </tr>
+          <tr>
+            <td><strong>Google LLC</strong> (Workspace, OAuth, Analytics, Ads)</td>
+            <td>Login social, e-mail corporativo, análise de tráfego</td>
+            <td>EUA</td>
+          </tr>
+          <tr>
+            <td><strong>YouTube (Google LLC)</strong></td>
+            <td>Hospedagem de vídeos do canal e da área de membros</td>
+            <td>EUA</td>
+          </tr>
+          <tr>
+            <td><strong>Provedores de automação</strong> (n8n, Z-API e similares)</td>
+            <td>Disparos automatizados de WhatsApp e e-mail</td>
+            <td>Brasil / EUA</td>
+          </tr>
+          <tr>
+            <td><strong>Provedores de hospedagem em nuvem</strong></td>
+            <td>Armazenamento de dados e infraestrutura</td>
+            <td>EUA / Brasil</td>
+          </tr>
+          <tr>
+            <td><strong>Plataformas de e-mail transacional</strong></td>
+            <td>Envio de e-mails de confirmação e suporte</td>
+            <td>EUA</td>
+          </tr>
+          <tr>
+            <td><strong>Autoridades públicas</strong></td>
+            <td>Cumprimento de ordem judicial, requisição da ANPD, Receita Federal ou Procon</td>
+            <td>Brasil</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Não vendemos, alugamos ou cedemos seus dados pessoais a terceiros para fins de marketing externo.</strong></p>
+
+    <!-- Section 6 -->
+    <h2 id="secao-6">6. Transferência internacional de dados</h2>
+    <p>Parte dos nossos fornecedores opera fora do Brasil, principalmente nos Estados Unidos. Quando seus dados são transferidos para outro país, garantimos que o destinatário oferece grau de proteção de dados compatível com a LGPD, mediante cláusulas contratuais específicas, certificações reconhecidas ou outros mecanismos previstos no Art. 33 da LGPD.</p>
+
+    <!-- Section 7 -->
+    <h2 id="secao-7">7. Por quanto tempo guardamos seus dados</h2>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Tipo de dado</th>
+            <th>Prazo de retenção</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lead de WhatsApp/e-mail sem compra</td>
+            <td>Até 24 meses após o último contato, ou até pedido de exclusão</td>
+          </tr>
+          <tr>
+            <td>Membro ativo da comunidade</td>
+            <td>Enquanto durar o vínculo + 12 meses após o cancelamento</td>
+          </tr>
+          <tr>
+            <td>Dados de compra, fiscais e contábeis</td>
+            <td>5 anos após a compra (Código Civil + Receita Federal)</td>
+          </tr>
+          <tr>
+            <td>Registros de acesso (logs)</td>
+            <td>6 meses (Art. 15, Marco Civil da Internet)</td>
+          </tr>
+          <tr>
+            <td>Conteúdo publicado na comunidade</td>
+            <td>Até a exclusão da conta; trechos podem permanecer em backups operacionais por até 12 meses</td>
+          </tr>
+          <tr>
+            <td>Dados objeto de processo administrativo ou judicial</td>
+            <td>Até o trânsito em julgado + prazo prescricional aplicável</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Encerrado o prazo, os dados são anonimizados ou excluídos com segurança.</p>
+
+    <!-- Section 8 -->
+    <h2 id="secao-8">8. Seus direitos como titular</h2>
+    <p>A LGPD (Art. 18) garante a você, a qualquer momento e gratuitamente, os seguintes direitos:</p>
+    <ul>
+      <li><strong>Confirmação</strong> da existência de tratamento dos seus dados</li>
+      <li><strong>Acesso</strong> aos seus dados</li>
+      <li><strong>Correção</strong> de dados incompletos, inexatos ou desatualizados</li>
+      <li><strong>Anonimização, bloqueio ou eliminação</strong> de dados desnecessários, excessivos ou tratados em desconformidade com a LGPD</li>
+      <li><strong>Portabilidade</strong> dos dados a outro fornecedor de serviço ou produto</li>
+      <li><strong>Eliminação</strong> dos dados tratados com base em consentimento</li>
+      <li><strong>Informação</strong> sobre as entidades públicas e privadas com as quais compartilhamos seus dados</li>
+      <li><strong>Informação</strong> sobre a possibilidade de não fornecer consentimento e suas consequências</li>
+      <li><strong>Revogação do consentimento</strong> a qualquer momento</li>
+      <li><strong>Oposição</strong> a tratamento realizado com fundamento em uma das hipóteses de dispensa de consentimento, em caso de descumprimento da lei</li>
+      <li><strong>Revisão</strong> de decisões tomadas unicamente com base em tratamento automatizado que afetem seus interesses</li>
+    </ul>
+
+    <p><strong>Como exercer:</strong> envie um e-mail para <strong><a href="mailto:privacidade@maestrosdaia.com">privacidade@maestrosdaia.com</a></strong> com o assunto "Direito do Titular — LGPD" e descreva sua solicitação. Responderemos em até <strong>15 dias</strong>, conforme exigido pela LGPD.</p>
+
+    <div class="info-box">
+      <p><strong>Atalhos práticos:</strong></p>
+      <ul>
+        <li>Para parar de receber mensagens no WhatsApp, responda <strong>SAIR</strong> a qualquer mensagem nossa.</li>
+        <li>Para parar de receber e-mails, clique em "Descadastrar" no rodapé de qualquer e-mail.</li>
+        <li>Para excluir sua conta na comunidade, escreva para <a href="mailto:privacidade@maestrosdaia.com">privacidade@maestrosdaia.com</a>.</li>
+      </ul>
+    </div>
+
+    <!-- Section 9 -->
+    <h2 id="secao-9">9. Cookies e tecnologias similares</h2>
+    <p>Usamos cookies próprios e de terceiros para:</p>
+    <ul>
+      <li><strong>Cookies essenciais</strong> — fazer o site funcionar (sessão, carrinho, login)</li>
+      <li><strong>Cookies de análise</strong> — entender como nossas páginas são usadas (Google Analytics, Meta Pixel)</li>
+      <li><strong>Cookies de marketing</strong> — personalizar anúncios e medir campanhas</li>
+    </ul>
+    <p>Você pode gerenciar suas preferências de cookies pelas configurações do navegador. Bloquear cookies essenciais pode afetar o funcionamento de partes do site.</p>
+
+    <!-- Section 10 -->
+    <h2 id="secao-10">10. Segurança dos dados</h2>
+    <p>Adotamos medidas técnicas e organizacionais razoáveis para proteger seus dados contra acesso não autorizado, perda, alteração ou destruição, incluindo:</p>
+    <ul>
+      <li>Conexões criptografadas (HTTPS/TLS) em todas as páginas</li>
+      <li>Controle de acesso por função (princípio do menor privilégio)</li>
+      <li>Senhas e tokens armazenados de forma cifrada</li>
+      <li>Monitoramento de atividades suspeitas</li>
+      <li>Acordos de confidencialidade e de tratamento de dados com fornecedores</li>
+      <li>Backups regulares com criptografia</li>
+    </ul>
+    <p>Nenhum sistema é 100% seguro. Em caso de incidente de segurança que possa gerar risco ou dano relevante aos titulares, notificaremos você e a <strong>ANPD</strong> nos termos do Art. 48 da LGPD.</p>
+
+    <!-- Section 11 -->
+    <h2 id="secao-11">11. Crianças e adolescentes</h2>
+    <p>Nossos serviços são destinados a maiores de 18 anos. Não coletamos intencionalmente dados de menores. Se você é responsável legal e identificou que um menor enviou dados, escreva para <strong><a href="mailto:privacidade@maestrosdaia.com">privacidade@maestrosdaia.com</a></strong> para que possamos excluí-los imediatamente.</p>
+
+    <!-- Section 12 -->
+    <h2 id="secao-12">12. Alterações desta Política</h2>
+    <p>Podemos atualizar esta Política periodicamente para refletir mudanças nos nossos serviços, na legislação ou nas práticas do setor. A versão vigente sempre estará nesta página com a data de "Última atualização" no topo. Alterações materiais serão comunicadas por e-mail ou aviso destacado na comunidade com pelo menos 7 dias de antecedência.</p>
+
+    <!-- Section 13 -->
+    <h2 id="secao-13">13. Encarregado (DPO) e contato</h2>
+    <ul>
+      <li><strong>E-mail de privacidade:</strong> <a href="mailto:privacidade@maestrosdaia.com">privacidade@maestrosdaia.com</a></li>
+      <li><strong>Encarregado pelo Tratamento de Dados (DPO):</strong> <em>(a ser definido — atualizar quando designado formalmente)</em></li>
+      <li><strong>Razão social:</strong> Maestria Academy Ltda</li>
+      <li><strong>CNPJ:</strong> 62.434.578/0001-03</li>
+    </ul>
+    <p>Se você considerar que sua solicitação não foi atendida adequadamente, pode também recorrer à <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong> pelo site <strong>gov.br/anpd</strong> ou aos órgãos de defesa do consumidor (Procon).</p>
+
+    <p class="end-mark">Fim do documento.</p>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <p><a href="https://maestrosdaia.com">← Voltar para maestrosdaia.com</a></p>
+    </footer>
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+    </svg>
+  </button>
+
+  <script>
+    var btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 400) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    });
+    btn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
