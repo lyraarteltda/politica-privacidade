@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maestros Publisher Privacy Policy | Maestros da IA</title>
+  <meta name="description" content="How Maestros Publisher, an internal application of Maestros da IA, accesses, uses, stores and deletes YouTube and Instagram data, and how to revoke access or request deletion.">
+  <link rel="canonical" href="https://politica.maestrosdaia.com/privacy">
+  <link rel="alternate" hreflang="pt-BR" href="https://politica.maestrosdaia.com/privacidade">
+  <link rel="alternate" hreflang="en" href="https://politica.maestrosdaia.com/privacy">
+
+  <!-- OG Tags -->
+  <meta property="og:title" content="Maestros Publisher Privacy Policy | Maestros da IA">
+  <meta property="og:description" content="How Maestros Publisher, an internal application of Maestros da IA, accesses, uses, stores and deletes YouTube and Instagram data, and how to revoke access or request deletion.">
+  <meta property="og:url" content="https://politica.maestrosdaia.com/privacy">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Maestros da IA">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Maestros Publisher Privacy Policy | Maestros da IA">
+  <meta name="twitter:description" content="How Maestros Publisher, an internal application of Maestros da IA, accesses, uses, stores and deletes YouTube and Instagram data, and how to revoke access or request deletion.">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text-primary: #0f172a;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --bg-page: #ffffff;
+      --bg-surface: #f8fafc;
+      --bg-badge: #0f172a;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --radius: 8px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      background: var(--bg-page);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    /* Skip link */
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -100px;
+      background: var(--bg-badge);
+      color: #ffffff;
+      padding: 10px 16px;
+      border-radius: var(--radius);
+      font-size: 14px;
+      font-weight: 600;
+      z-index: 10;
+      text-decoration: none;
+    }
+
+    .skip-link:focus { top: 16px; color: #ffffff; }
+
+    /* Document nav */
+    .doc-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px 16px;
+      padding-bottom: 16px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    .doc-nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .doc-nav li { margin: 0; }
+
+    .doc-nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      color: var(--text-muted);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .doc-nav a:hover { color: var(--accent); }
+
+    .doc-nav a[aria-current="page"] {
+      color: var(--text-primary);
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: var(--accent);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 6px;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 3px;
+      background: var(--bg-surface);
+    }
+
+    .lang-switch a,
+    .lang-switch span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 0 14px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .lang-switch span {
+      background: var(--bg-badge);
+      color: #ffffff;
+    }
+
+    .lang-switch a { color: var(--text-secondary); }
+    .lang-switch a:hover { color: var(--accent); }
+
+    /* Header */
+    .page-header {
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .page-header h1 {
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--bg-badge);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 100px;
+      letter-spacing: 0.01em;
+      line-height: 1.5;
+    }
+
+    .badge-outline {
+      background: transparent;
+      color: var(--text-primary);
+      border: 1px solid var(--border);
+    }
+
+    .page-header p:not(.eyebrow) {
+      margin-top: 20px;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* TOC */
+    .toc {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+
+    .toc-title {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .toc ol {
+      list-style: none;
+      counter-reset: toc-counter;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .toc li {
+      counter-increment: toc-counter;
+      margin-bottom: 6px;
+    }
+
+    .toc li::before {
+      content: counter(toc-counter) ".";
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-right: 8px;
+      font-size: 14px;
+    }
+
+    .toc a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 15px;
+      transition: color 0.15s;
+    }
+
+    .toc a:hover { color: var(--accent); }
+
+    /* Sections */
+    section { scroll-margin-top: 24px; }
+
+    section + section {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: clamp(1.25rem, 3vw, 1.5rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+      line-height: 1.35;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    /* Body text */
+    p { margin-bottom: 16px; }
+
+    strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover { color: var(--accent-hover); }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.875em;
+      color: var(--text-primary);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1px 6px;
+      overflow-wrap: anywhere;
+    }
+
+    .url {
+      display: block;
+      font-size: 14px;
+      color: var(--text-muted);
+      overflow-wrap: anywhere;
+    }
+
+    /* Lists */
+    ul, ol {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+
+    li { margin-bottom: 8px; }
+
+    li::marker { color: var(--text-muted); }
+
+    ol.steps li::marker { color: var(--accent); font-weight: 700; }
+
+    /* Tables */
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 20px 0 28px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    thead { background: var(--bg-surface); }
+
+    th {
+      text-align: left;
+      font-weight: 600;
+      color: var(--text-primary);
+      padding: 12px 16px;
+      border-bottom: 2px solid var(--border);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+
+    td:first-child {
+      color: var(--text-primary);
+      font-weight: 600;
+      width: 38%;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    /* Info box */
+    .info-box {
+      background: var(--bg-surface);
+      border-left: 3px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 20px 0;
+      font-size: 15px;
+    }
+
+    .info-box p:last-child,
+    .info-box ul:last-child { margin-bottom: 0; }
+
+    .note {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* Footer */
+    .page-footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .page-footer p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .page-footer a {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .page-footer a:hover { color: var(--accent); }
+
+    @media (max-width: 640px) {
+      .container { padding: 20px 16px 64px; }
+      .doc-nav { margin-bottom: 32px; }
+      .doc-nav ul { gap: 0 16px; }
+      .toc { padding: 20px; }
+      th, td { padding: 10px 12px; font-size: 13px; }
+      td:first-child { width: 40%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Skip to content</a>
+  <div class="container" id="topo">
+
+    <nav class="doc-nav" aria-label="Maestros Publisher documents">
+      <ul>
+        <li><a href="/privacy" aria-current="page">Privacy</a></li>
+        <li><a href="/terms">Terms of Use</a></li>
+        <li><a href="https://politica.maestrosdaia.com/">General policy</a></li>
+      </ul>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <span lang="en" aria-current="true">English</span>
+        <a href="/privacidade" hreflang="pt-BR" lang="pt-BR">Português</a>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <p class="eyebrow">Maestros Publisher · internal application of Maestros da IA</p>
+      <h1>Maestros Publisher Privacy Policy</h1>
+      <div class="badges">
+        <span class="badge">Effective date: November 19, 2026</span>
+        <span class="badge badge-outline">Last updated: November 19, 2026</span>
+      </div>
+      <p>This policy explains how <strong>Maestros Publisher</strong>, an internal application of Maestros da IA, accesses, uses, stores, shares and deletes data. It applies only to this application. For other Maestros da IA services, see our <a href="https://politica.maestrosdaia.com/">general Privacy Policy</a> (in Portuguese).</p>
+    </header>
+
+    <main id="conteudo">
+      <nav class="toc" aria-label="Contents">
+        <div class="toc-title">Contents</div>
+        <ol>
+          <li><a href="#responsible-party">Responsible party and contact</a></li>
+          <li><a href="#the-app">What Maestros Publisher is</a></li>
+          <li><a href="#data-accessed">Data the app accesses</a></li>
+          <li><a href="#data-use">How we use the data</a></li>
+          <li><a href="#data-sharing">Who we share data with</a></li>
+          <li><a href="#storage-and-security">Storage and security</a></li>
+          <li><a href="#cookies">Cookies and devices</a></li>
+          <li><a href="#data-deletion">How to revoke access and request data deletion</a></li>
+          <li><a href="#limited-use">Limited Use of Google API data</a></li>
+          <li><a href="#platform-policies">Platform policies</a></li>
+          <li><a href="#your-rights">Your rights under Brazilian law (LGPD)</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+        </ol>
+      </nav>
+
+      <section id="responsible-party" aria-labelledby="responsible-party-titulo">
+        <h2 id="responsible-party-titulo">1. Responsible party and contact</h2>
+        <ul>
+          <li><strong>Responsible party:</strong> Maestria Academy Ltda, owner of the Maestros da IA brand, Brazil</li>
+          <li><strong>CNPJ (Brazilian company registration number):</strong> 62.434.578/0001-03</li>
+          <li><strong>Contact for privacy questions and complaints:</strong> <a href="mailto:contato@lyraarte.com">contato@lyraarte.com</a></li>
+        </ul>
+        <p>If you have any question or complaint about how Maestros Publisher handles data, email us at this address.</p>
+      </section>
+
+      <section id="the-app" aria-labelledby="the-app-titulo">
+        <h2 id="the-app-titulo">2. What Maestros Publisher is</h2>
+        <p>Maestros Publisher is an <strong>internal application of Maestros da IA</strong>. Only the company's team uses it, to publish videos to the YouTube channels and Instagram professional accounts owned by Maestros da IA itself, through the official Google and Meta APIs.</p>
+        <p>The app is not offered to the public. No one outside the company signs in to it, and it is not used with other people's accounts.</p>
+        <div class="info-box">
+          <p><strong>Maestros Publisher uses YouTube API Services.</strong> For this reason, everyone who uses the app is also bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+        </div>
+      </section>
+
+      <section id="data-accessed" aria-labelledby="data-accessed-titulo">
+        <h2 id="data-accessed-titulo">3. Data the app accesses</h2>
+        <h3>Google and YouTube</h3>
+        <p>The company authorizes access through Google OAuth 2.0, with two scopes:</p>
+        <ul>
+          <li><code>https://www.googleapis.com/auth/youtube.upload</code>: to upload videos to the company's channels, including the video file, title, description, tags, thumbnail and privacy setting.</li>
+          <li><code>https://www.googleapis.com/auth/youtube.readonly</code>: to read data and statistics from the company's own channels: channel data, video list, views, likes and comment counts.</li>
+        </ul>
+
+        <h3>Meta and Instagram</h3>
+        <p>The company authorizes access through the official Instagram login, with two permissions:</p>
+        <ul>
+          <li><code>instagram_business_basic</code>: to read data from the company's own professional accounts: profile, media and metrics.</li>
+          <li><code>instagram_business_content_publish</code>: to publish Reels to those accounts.</li>
+        </ul>
+        <p>Through Meta's <strong>Business Discovery</strong> feature, the app also reads <strong>public</strong> data from other Instagram professional accounts: username, follower count, public posts and the public metrics of those posts. We use this data only for content research.</p>
+
+        <h3>Access tokens</h3>
+        <p>The app stores the access tokens and refresh tokens issued by Google and Meta. These tokens let the app publish to and read data from the company's accounts after authorization.</p>
+
+        <div class="info-box">
+          <p><strong>What the app does not access:</strong> personal accounts, direct messages, or anyone's private data.</p>
+        </div>
+      </section>
+
+      <section id="data-use" aria-labelledby="data-use-titulo">
+        <h2 id="data-use-titulo">4. How we use the data</h2>
+        <p>We use the data only to:</p>
+        <ul>
+          <li>publish content to the company's own accounts;</li>
+          <li>measure how that content performs, in internal reports;</li>
+          <li>do content research with the public data from Business Discovery.</li>
+        </ul>
+        <p>We do <strong>not</strong>:</p>
+        <ul>
+          <li>sell data;</li>
+          <li>share data with third parties, other than the platforms listed in section 5;</li>
+          <li>use data for advertising or audience targeting;</li>
+          <li>build profiles of people;</li>
+          <li>use data to develop, improve or train artificial intelligence or machine learning models.</li>
+        </ul>
+      </section>
+
+      <section id="data-sharing" aria-labelledby="data-sharing-titulo">
+        <h2 id="data-sharing-titulo">5. Who we share data with</h2>
+        <p>Data goes to only two places:</p>
+        <ul>
+          <li><strong>Google/YouTube and Meta/Instagram</strong>, the platforms where we publish;</li>
+          <li><strong>servers we control</strong>, on infrastructure we contract to host the app.</li>
+        </ul>
+        <p>No one else receives this data. Inside the company, only the authorized team can access it.</p>
+      </section>
+
+      <section id="storage-and-security" aria-labelledby="storage-and-security-titulo">
+        <h2 id="storage-and-security-titulo">6. Storage and security</h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th scope="col">Data</th><th scope="col">How long we keep it</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Access and refresh tokens</td><td>While the account remains authorized. They are stored encrypted, and only the authorized team can access them.</td></tr>
+              <tr><td>Video files</td><td>Deleted from our server 7 days after publishing.</td></tr>
+              <tr><td>Statistics and metrics of the company's accounts (YouTube and Instagram)</td><td>Kept for internal reports while the account remains authorized, or until a deletion request. For YouTube, we check at least every 30 days that the authorization is still valid.</td></tr>
+              <tr><td>Other YouTube channel data (channel data and video list)</td><td>No more than 30 calendar days. After that, it is refreshed or deleted.</td></tr>
+              <tr><td>Profile and media of the company's Instagram accounts</td><td>While the account remains authorized, or until a deletion request.</td></tr>
+              <tr><td>Public data from other accounts (Business Discovery)</td><td>Only while it is needed for content research. After that, it is deleted.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>How we protect the data:</p>
+        <ul>
+          <li>tokens are stored encrypted;</li>
+          <li>access to the data is restricted to the company's authorized team;</li>
+          <li>communication with the Google and Meta APIs uses encrypted connections (HTTPS);</li>
+          <li>the data is kept on servers we control.</li>
+        </ul>
+      </section>
+
+      <section id="cookies" aria-labelledby="cookies-titulo">
+        <h2 id="cookies-titulo">7. Cookies and devices</h2>
+        <p>Maestros Publisher does not place cookies or use similar technologies. It does not read information from the devices of people who visit these pages.</p>
+        <p>The app does not show advertising and does not allow third parties to serve content in it. These pages have no ads, no analytics tools, no tracking pixels and no third-party content.</p>
+      </section>
+
+      <section id="data-deletion" aria-labelledby="data-deletion-titulo">
+        <h2 id="data-deletion-titulo">8. How to revoke access and request data deletion</h2>
+        <p>You can remove Maestros Publisher's access at any time and ask us to delete the data. Anyone can request deletion, including the owner of an Instagram professional account whose public data we read for content research.</p>
+
+        <h3>Google and YouTube</h3>
+        <ol class="steps">
+          <li>Open the permissions page of your Google Account: <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>. The address of the Google security settings page, <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>, leads to the same place.</li>
+          <li>Sign in with the Google account that authorized the app, if asked.</li>
+          <li>In the list of third-party apps and services, select <strong>Maestros Publisher</strong>.</li>
+          <li>Click <strong>Remove access</strong> and confirm. In some versions of the page, the button is called "Delete all connections".</li>
+        </ol>
+
+        <h3>Meta and Instagram</h3>
+        <ol class="steps">
+          <li>On Instagram, open <strong>Settings</strong> &gt; <strong>Apps and websites</strong>: <a href="https://www.instagram.com/accounts/manage_access/">https://www.instagram.com/accounts/manage_access/</a>.</li>
+          <li>On the <strong>Active</strong> tab, select <strong>Maestros Publisher</strong> and tap <strong>Remove</strong>.</li>
+          <li>If the Instagram account is linked to a Facebook profile, also open <strong>Settings</strong> &gt; <strong>Business integrations</strong> on Facebook: <a href="https://www.facebook.com/settings?tab=business_tools">https://www.facebook.com/settings?tab=business_tools</a>. Check <strong>Maestros Publisher</strong> and click <strong>Remove</strong>.</li>
+        </ol>
+        <p class="note">These Google and Meta pages require you to sign in. After signing in, you land on the right setting.</p>
+
+        <h3>Deletion request by email</h3>
+        <ol class="steps">
+          <li>Email <a href="mailto:contato@lyraarte.com?subject=Data%20deletion%3A%20Maestros%20Publisher">contato@lyraarte.com</a> with the subject "Data deletion: Maestros Publisher".</li>
+          <li>Tell us which account it is (YouTube channel or Instagram username) and whether you want all data or only part of it deleted.</li>
+          <li>We delete the data as soon as we receive the request, within 7 calendar days at most, and confirm by email when it is done.</li>
+        </ol>
+
+        <h3>What is deleted</h3>
+        <p>Everything the app stores about that account: access and refresh tokens, any video files still on the server, statistics and metrics, and content research data.</p>
+
+        <h3>Deadlines</h3>
+        <ul>
+          <li><strong>Request by email:</strong> deletion within 7 calendar days, with confirmation by email.</li>
+          <li><strong>Access removed in Google or Meta settings:</strong> we delete that account's data within 30 calendar days of the removal. We regularly check that each authorization is still valid.</li>
+        </ul>
+
+        <div class="info-box">
+          <p>Deleting the data stored by Maestros Publisher does not, in any way, affect data stored by YouTube or Instagram. Videos and Reels already published stay on the accounts until they are deleted directly on the platforms.</p>
+        </div>
+      </section>
+
+      <section id="limited-use" aria-labelledby="limited-use-titulo">
+        <h2 id="limited-use-titulo">9. Limited Use of Google API data</h2>
+        <div class="info-box">
+          <p>Maestros Publisher's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+        </div>
+        <p>In practice, data received from Google APIs is used only for the app features described in this policy. It is not sold, not used for advertising and not used to train artificial intelligence models.</p>
+      </section>
+
+      <section id="platform-policies" aria-labelledby="platform-policies-titulo">
+        <h2 id="platform-policies-titulo">10. Platform policies</h2>
+        <p>Maestros Publisher uses YouTube API Services and Meta's APIs. These platform rules also apply:</p>
+        <ul>
+          <li><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a><span class="url">https://www.youtube.com/t/terms</span></li>
+          <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a><span class="url">https://policies.google.com/privacy</span></li>
+          <li><a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a><span class="url">https://www.facebook.com/privacy/policy/</span></li>
+        </ul>
+      </section>
+
+      <section id="your-rights" aria-labelledby="your-rights-titulo">
+        <h2 id="your-rights-titulo">11. Your rights under Brazilian law (LGPD)</h2>
+        <p>Under Brazil's General Data Protection Law (LGPD, Law No. 13,709/2018), you can request access to, correction of, or deletion of your data. Just email <a href="mailto:contato@lyraarte.com">contato@lyraarte.com</a>.</p>
+        <p><strong>Legal basis:</strong> the legitimate interest of Maestros da IA in publishing and measuring content on its own accounts, and the operation of this service by the company itself.</p>
+      </section>
+
+      <section id="changes" aria-labelledby="changes-titulo">
+        <h2 id="changes-titulo">12. Changes to this policy</h2>
+        <p>If we change this policy, we publish the new version on this page and update the "Last updated" date at the top. If a change affects how the app uses data, we notify the team that uses the app and ask them to accept the new version before the app uses data in a new way.</p>
+        <ul>
+          <li><strong>Effective date:</strong> November 19, 2026</li>
+          <li><strong>Last updated:</strong> November 19, 2026</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>Maestria Academy Ltda · CNPJ 62.434.578/0001-03 · <a href="mailto:contato@lyraarte.com">contato@lyraarte.com</a></p>
+      <p><a href="/terms">Maestros Publisher Terms of Use</a> · <a href="https://politica.maestrosdaia.com/">General Privacy Policy (Portuguese)</a> · <a href="/privacidade" hreflang="pt-BR" lang="pt-BR">Versão em português</a></p>
+      <p><a href="#topo">Back to top</a></p>
+    </footer>
+  </div>
+</body>
+</html>
